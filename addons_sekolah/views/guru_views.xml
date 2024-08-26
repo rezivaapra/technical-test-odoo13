@@ -1,0 +1,52 @@
+<odoo>
+    <record id="addonssekolah_guru_tree" model="ir.ui.view">
+        <field name="name">addonssekolah.guru.tree</field>
+        <field name="model">addonssekolah.guru</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="nip" />
+                <field name="jns_kelamin" />
+                <field name="mata_pelajaran" />
+                <field name="usia" />
+                <field name="no_telp" />
+                <field name="alamat" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="addonssekolah_guru_form" model="ir.ui.view">
+        <field name="name">addonssekolah.guru.form</field>
+        <field name="model">addonssekolah.guru</field>
+        <field name="arch" type="xml">
+            <form string="Form Guru">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="nip" />
+                        <field name="jns_kelamin" />
+                        <field name="mata_pelajaran" />
+                        <field name="usia" />
+                        <field name="no_telp" />
+                        <field name="alamat" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="addonssekolah_guru_action" model="ir.actions.act_window">
+        <field name="name">Guru</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">addonssekolah.guru</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+        id="addonssekolah_guru_menu_act" 
+        name="Guru" 
+        parent="addonssekolah_guru_menu_categ" 
+        action="addonssekolah_guru_action" 
+        sequence="13"
+    />
+</odoo>

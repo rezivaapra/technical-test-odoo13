@@ -1,0 +1,42 @@
+<odoo>
+    <record id="addonssekolah_matapelajaran" model="ir.ui.view">
+        <field name="name">addonssekolah.matapelajaran.tree</field>
+        <field name="model">addonssekolah.matapelajaran</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="jurusan" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="addonssekolah_matapelajaran_form" model="ir.ui.view">
+        <field name="name">addonssekolah.matapelajaran.form</field>
+        <field name="model">addonssekolah.matapelajaran</field>
+        <field name="arch" type="xml">
+            <form string="Form Mata Pelajaran">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="jurusan" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="addonssekolah_matapelajaran_action" model="ir.actions.act_window">
+        <field name="name">Mata Pelajaran</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">addonssekolah.matapelajaran</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+        id="addonssekolah_matapelajaran_menu_act" 
+        name="Mata Pelajaran" 
+        parent="addonssekolah_matapelajaran_menu_categ" 
+        action="addonssekolah_matapelajaran_action" 
+        sequence="14"
+    />
+</odoo>

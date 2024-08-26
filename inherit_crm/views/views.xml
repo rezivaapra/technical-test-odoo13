@@ -1,0 +1,36 @@
+<odoo>
+    <record id="view_crm_lead_form_quick_create_inherited" model="ir.ui.view">
+        <field name="name">crm.lead.form.quick_create.inherited</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.quick_create_opportunity_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <field name="is_new_customer" />
+                <field name="customer_segment" />
+                <field name="segment_product_id" />
+            </xpath>
+        </field>
+    </record>
+    <record id="crm_lead_view_form_inherit" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@attrs=&quot;{'invisible': [('type', '=', 'lead')]}&quot;]/field[@name='tag_ids']" position="after">
+                <separator/>
+                <field name="is_new_customer"/>
+                <field name="customer_segment"/>
+                <field name="segment_product_id"/>
+            </xpath>
+            <xpath expr="//notebook/page[@name='lead']" position="after">
+            <page name="task_progress" string="Task Progress">
+                <group>
+                    <field name="task" />
+                    <field name="deadline" />
+                    <field name="status" />
+                </group>
+            </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

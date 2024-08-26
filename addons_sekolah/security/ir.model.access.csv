@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_addonssekolah_siswa,access.addonssekolah.siswa,model_addonssekolah_siswa,,1,1,1,1
+access_addonssekolah_kelaskelas,access.addonssekolah.kelaskelas,model_addonssekolah_kelaskelas,,1,1,1,1
+access_addonssekolah_guru,access.addonssekolah.guru,model_addonssekolah_guru,,1,1,1,1
+access_addonssekolah_matapelajaran,access.addonssekolah.matapelajaran,model_addonssekolah_matapelajaran,,1,1,1,1
+access_addonssekolah_jadwal,access.addonssekolah.jadwal,model_addonssekolah_jadwal,,1,1,1,1

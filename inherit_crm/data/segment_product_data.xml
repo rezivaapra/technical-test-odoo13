@@ -1,0 +1,16 @@
+<odoo>
+    <record id="segment_product_1" model="segment.product">
+        <field name="name">Produk 1</field>
+        <field name="description">Products related to electronics.</field>
+    </record>
+
+    <record id="segment_product_2" model="segment.product">
+        <field name="name">Produk 2</field>
+        <field name="description">Products related to furniture.</field>
+    </record>
+
+    <record id="segment_product_3" model="segment.product">
+        <field name="name">Produk 3</field>
+        <field name="description">Products related to clothing.</field>
+    </record>
+</odoo>

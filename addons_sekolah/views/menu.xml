@@ -1,0 +1,42 @@
+<odoo>
+    <menuitem 
+        id="addonssekolah_menu_root"
+        name="Addons Sekolah"
+        sequence="10"
+    />
+
+    <menuitem 
+        id="addonssekolah_siswa_menu_categ"
+        name="Siswa"
+        parent="addonssekolah_menu_root"
+        sequence="10"
+    />
+
+    <menuitem 
+        id="addonssekolah_kelaskelas_menu_categ"
+        name="Kelas"
+        parent="addonssekolah_menu_root"
+        sequence="12"
+    />
+
+    <menuitem 
+        id="addonssekolah_guru_menu_categ"
+        name="Guru"
+        parent="addonssekolah_menu_root"
+        sequence="13"
+    />
+
+    <menuitem 
+        id="addonssekolah_matapelajaran_menu_categ"
+        name="Mata Pelajaran"
+        parent="addonssekolah_menu_root"
+        sequence="14"
+    />
+
+    <menuitem 
+        id="addonssekolah_jadwal_menu_categ"
+        name="Jadwal"
+        parent="addonssekolah_menu_root"
+        sequence="15"
+    />
+</odoo>
